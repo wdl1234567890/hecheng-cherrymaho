@@ -51,7 +51,7 @@ export default class Animation{
         render: {
           opacity: count,
           sprite: {
-            texture: './images/动画/pong.png',
+            texture: State.baseUrl + 'images/动画/pong.png',
             xScale: count,
             yScale: count
           },
@@ -77,8 +77,8 @@ export default class Animation{
         clearInterval(stop)
         return
       }
-      let texture="./images/动画/爱心.png"
-      if(yida)texture="./images/动画/心碎.png"
+      let texture=State.baseUrl + "images/动画/爱心.png"
+      if(yida)texture=State.baseUrl + "images/动画/心碎.png"
       item=State.Bodies.circle(x, y, 10, {
         isStatic: true,
         render: {
@@ -126,7 +126,7 @@ export default class Animation{
           render: {
             opacity: 1-count,
             sprite: {
-              texture: './images/动画/烟花1.png',
+              texture: State.baseUrl + 'images/动画/烟花1.png',
               xScale: count,
               yScale: count
             }
@@ -151,7 +151,7 @@ export default class Animation{
           render: {
             opacity: 1-count,
             sprite: {
-              texture: './images/动画/烟花2.png',
+              texture: State.baseUrl + 'images/动画/烟花2.png',
               xScale: count,
               yScale: count
             }
@@ -176,7 +176,7 @@ export default class Animation{
           render: {
             opacity: 1-count,
             sprite: {
-              texture: './images/动画/烟花3.png',
+              texture: State.baseUrl + 'images/动画/烟花3.png',
               xScale: count,
               yScale: count
             }

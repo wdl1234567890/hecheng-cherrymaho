@@ -20,7 +20,7 @@ export default class physics {
       options: {
         width: State.windowWidth,
         height: State.windowHeight,
-        background: './images/bg.jpg',
+        background: State.baseUrl + 'images/bg.jpg',
         wireframes: false,
         showAngleIndicator: false,
         showMousePosition: false,

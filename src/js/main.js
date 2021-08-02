@@ -42,15 +42,15 @@ export default class Main {
 
         if(State.mode=="bengc"&&pair.bodyB==State.newCircle && pair.bodyA.label == "Rectangle Body"){
           State.bgm.pause()
-          State.bgm.src="./audio/蹦床.mp3"
+          State.bgm.src= State.baseUrl + "audio/蹦床.mp3"
           State.bgm.play()
         }else if((State.mode=="normal"||State.mode=="sky"|| State.mode=="yidayida")&&pair.bodyB==State.newCircle && pair.bodyA.label == "Rectangle Body"){
           State.bgm.pause()
-          State.bgm.src="./audio/木板.mp3"
+          State.bgm.src=State.baseUrl + "audio/木板.mp3"
           State.bgm.play()
         }else if(State.mode=="seesaw"&&pair.bodyB==State.newCircle && pair.bodyA.label == "Rectangle Body"){
           State.bgm.pause()
-          State.bgm.src="./audio/跷跷板.mp3"
+          State.bgm.src=State.baseUrl + "audio/跷跷板.mp3"
           State.bgm.play()
         }
 
@@ -301,11 +301,11 @@ export default class Main {
     Music.stopCollisionMusic()
     let rand = Math.round(Math.random()*19)
     if(rand < 10){
-      State.bgm.src='./audio/hello hello my love～.mp3'
+      State.bgm.src=State.baseUrl + 'audio/hello hello my love～.mp3'
       document.getElementById("failed-tip").innerHTML='害，失败了，给町田一首歌的时间安慰你~'
     }
     else{
-      State.bgm.src='./audio/楚楚唱歌.mp3'
+      State.bgm.src=State.baseUrl + 'audio/楚楚唱歌.mp3'
       document.getElementById("failed-tip").innerHTML='害，失败了，赤楚的歌声安慰你~'
     }
     State.bgm.play()
@@ -321,7 +321,7 @@ export default class Main {
     Animatin.firework()
     document.getElementById("successscore").innerHTML=State.currentScore
     Music.stopCollisionMusic()
-    State.bgm.src='./audio/DEEP SQUAD - Good Love Your Love.mp3'
+    State.bgm.src=State.baseUrl + 'audio/DEEP SQUAD - Good Love Your Love.mp3'
     State.bgm.play()
     State.Events.off(State.engine, "collisionStart",State.collisionStartEvent)
     State.Events.off(State.mouseConstraint, "mouseup",State.enddragEvent)

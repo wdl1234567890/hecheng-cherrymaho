@@ -1,3 +1,4 @@
+const baseUrl = "https://hecheng-cherrymaho-fl-wdl.oss-cn-shenzhen.aliyuncs.com/"
 let defaultStates={
   datas:null,
   datasIds:null,
@@ -27,9 +28,9 @@ let defaultStates={
   yida:{
     id:"yida",
     score:-10,
-    texture:"./images/奇怪的东西/橘子.png",
+    texture:baseUrl + "images/奇怪的东西/橘子.png",
     size:80,
-    collisionMusic:"./audio/一打一打.mp3",
+    collisionMusic:baseUrl + "audio/一打一打.mp3",
     dropItems:[]
   },
   Engine:null,
@@ -57,7 +58,7 @@ let defaultStates={
   wallThickness:50,
   currentScore:0,
   collisionStartEvent:null,
-  bgm:new Audio('./audio/DEEP SQUAD - Good Love Your Love.mp3'),
+  bgm:new Audio(baseUrl + 'audio/DEEP SQUAD - Good Love Your Love.mp3'),
   firework:[],
   maxPositionEle:null,
   isWarned:false,

@@ -91,7 +91,7 @@ export default class elementFactory {
       isStatic: true,
       render:{
         sprite:{
-          texture:'./images/warn-line.png'
+          texture:State.baseUrl + 'images/warn-line.png'
         }
       },
       collisionFilter: {
