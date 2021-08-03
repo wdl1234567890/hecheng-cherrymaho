@@ -77,6 +77,7 @@ export default class Animation{
         clearInterval(stop)
         return
       }
+	  console.log("++++++++" +State.baseUrl)
       let texture=State.baseUrl + "images/动画/爱心.png"
       if(yida)texture=State.baseUrl + "images/动画/心碎.png"
       item=State.Bodies.circle(x, y, 10, {

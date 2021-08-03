@@ -46,6 +46,7 @@ export default class Main {
           State.bgm.play()
         }else if((State.mode=="normal"||State.mode=="sky"|| State.mode=="yidayida")&&pair.bodyB==State.newCircle && pair.bodyA.label == "Rectangle Body"){
           State.bgm.pause()
+		  console.log("-----" +State.baseUrl)
           State.bgm.src=State.baseUrl + "audio/木板.mp3"
           State.bgm.play()
         }else if(State.mode=="seesaw"&&pair.bodyB==State.newCircle && pair.bodyA.label == "Rectangle Body"){

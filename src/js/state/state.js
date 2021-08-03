@@ -1,4 +1,4 @@
-const baseUrl = "https://hecheng-cherrymaho-fl-wdl.oss-cn-shenzhen.aliyuncs.com/"
+let baseUrl = "https://hecheng-cherrymaho-fl-wdl.oss-cn-shenzhen.aliyuncs.com/"
 let defaultStates={
   datas:null,
   datasIds:null,
@@ -75,5 +75,6 @@ let defaultStates={
 
 let copy = Object.create(defaultStates)
 copy.defaultStates=defaultStates
+copy.baseUrl = baseUrl
 
 export default copy
